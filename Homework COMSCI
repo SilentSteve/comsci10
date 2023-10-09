@@ -1,0 +1,22 @@
+#steven, king, sayum
+
+#defining
+minimum = 1000
+maximum = 0
+Fighters = [23,56,50,62,23,23,21,27,23,36]
+
+#maximum and minimum
+for count in range(0, len(Fighters)):
+  if Fighters[count] < minimum:
+    minimum = Fighters[count]
+  if Fighters[count] > maximum:
+    maximum = Fighters[count]
+print("Maximum = " + str(maximum))
+print("Minimum = " + str(minimum))
+
+#average
+Total = 0
+for Count in range (0, len(Fighters)):
+  Total = Total + Fighters[Count]
+Average = Total/len(Fighters)
+print(str(Average) + " is the average number of wins")
